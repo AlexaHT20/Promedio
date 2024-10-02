@@ -33,8 +33,8 @@ public class PromedioGrupo{
         System.out.println("Las calificaciones de cada alumno son: ");
         for( double calif : calificaciones){
             System.out.println(calif);
-        System.out.println("----------------------------------------"); 
-        System.out.println("El promedio de grupo es: " + promedio); 
+        System.out.println("----------------------------------------");
+        System.out.println("El promedio de grupo es: " + promedio);
         }
 
     }
