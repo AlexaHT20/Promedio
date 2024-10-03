@@ -56,7 +56,7 @@ public class Alumno {
         return promedio;
     }
 
-    public void setpromedio(double promedio) {
+    public void setpromedio() {
         this.promedio = (this.estructuras * this.ingles * this.iot) / 3;
     }
 
@@ -64,7 +64,6 @@ public class Alumno {
     public String toString() {
         return "Alumno [matricula=" + matricula + ", nombre=" + nombre + ", promedio=" + promedio + "]";
     }
-
-    
+ 
 
 }
