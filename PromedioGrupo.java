@@ -38,12 +38,18 @@ public class PromedioGrupo{
             }
         }
 
+        public static void imprimirAlumnos(){
+            System.out.println("Contenido del arreglo alumnos:");
+            for (Alumno a : alumnos){
+                System.out.println("-----------------------------------");
+                System.out.println("Infromacion del alumno");
+                System.out.println(a.toString());
+            }
+        }
+
     public static void main(String[] args) throws IOException {
         int n; //tamaño del grupo
 
-
-        // double[] calificaciones; //Calificaciones de cada alumno
-        // double suma = 0; // para sumar calificaciones
         // double promedio; // el promedio del grupo
 
 
@@ -57,8 +63,11 @@ public class PromedioGrupo{
 
         //construimos el arreglo alumno;
         alumnos = new Alumno[n];
+        //Introducir infromacion de los alumnos
+        leerAlumnos();
+        //Mostrae la infromacion
+        imprimirAlumnos();
 
-        // calificaciones = new double[n]; //Construccion del arreglo
         // Pedir calificacion y acumularla
         // for( int i = 0;i < calificaciones.length;i++){
         //     System.out.println("Escribe la calificacion del estudiante[ "+ (i+1)+ "]");
